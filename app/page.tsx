@@ -40,6 +40,7 @@ export default async function Home() {
         <AuthButtonServer />
       </div>
       <NewTweet user={session.user} />
+      {/* @ts-ignore */}
       <Tweets tweets={tweets} />
     </div>
   );

@@ -22,6 +22,7 @@ export default function Tweets({ tweets }: { tweets: TweetWithAuthor[] }) {
   const supabase = createClientComponentClient();
   const router = useRouter();
 
+  // @ts-ignore
   useEffect(() => {
     const channel = supabase
       .channel("realtime tweets")
